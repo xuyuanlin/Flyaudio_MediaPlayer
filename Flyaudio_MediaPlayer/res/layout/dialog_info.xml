@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:minWidth="280.0dip"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:singleLine="true"
+        android:text="@string/xml_dialog_info_title"
+        android:textColor="@color/dialog_title"
+        android:textSize="16.0sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="@color/dialog_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10.0dip" >
+
+        <TextView
+            android:id="@+id/dialog_info_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/dialog_text"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/dialog_info_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1.0dip"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/dialog_text"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/dialog_info_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1.0dip"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/dialog_text"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/dialog_info_genre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1.0dip"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/dialog_text"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/dialog_menu_list_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:padding="10.0dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1.0dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/dialog_info_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/dialog_text"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/dialog_info_format"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/dialog_text"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/dialog_info_kbps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/dialog_text"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1.0dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/dialog_info_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/dialog_text"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/dialog_info_years"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/dialog_text"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/dialog_info_hz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/dialog_text"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/dialog_menu_list_line" />
+
+    <TextView
+        android:id="@+id/dialog_info_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1.0dip"  
+        android:gravity="center_vertical"
+        android:padding="10.0dip"
+        android:textColor="@color/dialog_text"
+        android:textSize="16.0sp" />
+
+    <Button
+        android:id="@+id/dialog_info_btn_ok"
+        android:layout_width="130.0dip"
+        android:layout_height="35.0dip"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/dialog_btn_style"
+        android:singleLine="true"
+        android:text="@string/xml_dialog_btn_negative"
+        android:textColor="@color/dialog_btn"
+        android:textSize="15.0dip" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@color/transparent" />
+
+</LinearLayout>

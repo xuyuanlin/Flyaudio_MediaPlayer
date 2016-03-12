@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.flyAudio.flyMediaPlayer"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.flyaudio.flyMediaPlayer.until.AllListActivity"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.NoActionBar" >
+        <activity
+            android:name="com.flyaudio.flyMediaPlayer.activity.LogoActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.flyaudio.flyMediaPlayer.activity.MainActivity" >
+        </activity>
+        <activity android:name="com.flyaudio.flyMediaPlayer.activity.PlayerActivity" >
+        </activity>
+        <activity
+            android:name="com.flyaudio.flyMediaPlayer.activity.AffectActivity"
+            android:label="@string/eq_dialog_title"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Holo" >
+            <intent-filter>
+                <action android:name="android.media.action.DISPLAY_AUDIO_EFFECT_CONTROL_PANEL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.CATEGORY_CONTENT_MUSIC" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.flyaudio.flyMediaPlayer.serviceImpl.MediaService" >
+            <intent-filter android:priority="1000" >
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

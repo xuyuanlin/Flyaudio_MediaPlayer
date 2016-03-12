@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_back"
+    tools:context=".LogoActivity" >
+
+    <View
+        android:id="@+id/activity_logo_center"
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/activity_logo_gif"
+        android:layout_width="91.0dip"
+        android:layout_height="72.0dip"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/activity_logo_name"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/activity_logo_gif3"
+        android:layout_width="91.0dip"
+        android:layout_height="72.0dip"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/activity_logo_name"
+        android:src="@drawable/logo3" />
+
+    <ImageView
+        android:id="@+id/activity_logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/logo2" />
+
+</RelativeLayout>

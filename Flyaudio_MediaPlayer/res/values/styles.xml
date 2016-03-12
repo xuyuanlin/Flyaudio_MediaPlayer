@@ -1,0 +1,113 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.flyaudio.flyMediaPlayer"
+    >
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="Dialog" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- Activity theme no title bar -->
+    <style name="AnimationThemeNoTitleBar" parent="android:Theme.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/ActivityAnimationStyle</item>
+    </style>
+
+    <!-- Activity theme no title bar & full screen -->
+    <style name="AnimationThemeNoTitleBarFullscreen" parent="android:Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowAnimationStyle">@style/ActivityAnimationStyle</item>
+    </style>
+
+    <!-- Activity动画，截取至金山电池医生 -->
+    <style name="ActivityAnimationStyle">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_scale_up_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_scale_up_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_scale_down_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_scale_down_exit</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <style name="TVAnimDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="TVAnimDialogWindowAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_tv_on</item>
+        <item name="android:windowExitAnimation">@anim/dialog_tv_off</item>
+    </style>
+
+  <!--    <style name="Widget.Holo.SeekBar.Vertical" parent="@android:Widget.Holo.SeekBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/scrubber_progress_vertical_holo_dark</item>
+not public       <item name="android:indeterminateDrawable">@android:drawable/scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:minWidth">33dip</item>
+        <item name="android:maxWidth">33dip</item>
+not public        <item name="android:thumb">@android:drawable/scrubber_control_selector_holo</item>
+        <item name="android:thumbOffset">16dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+        <item name="android:paddingTop">16dip</item>
+        <item name="android:paddingBottom">16dip</item>
+    </style> -->
+         <style name="MySeekbarVertical" >
+        <item name="indeterminateOnly">false</item>
+      <item name="progressDrawable">@drawable/scrubber_progress_vertical_holo_dark</item> 
+       <!--   <item name="progressDrawable">@drawable/main_p</item> -->
+      <item name="indeterminateDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
+        <item name="minWidth">33dip</item>
+        <item name="maxWidth">33dip</item>
+        <item name="thumb">@drawable/scrubber_control_selector_holo</item>
+        <item name="thumbOffset">16dip</item>
+         <item name="android:focusable">true</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+        <item name="android:paddingTop">16dip</item>
+        <item name="android:paddingBottom">16dip</item>
+    </style>
+    
+
+     
+
+  <!--   <style name="Widget.seekbar.SeekBar" parent="@android:Widget.SeekBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+        not public         <item name="android:thumb">@android:drawable/seek_thumb</item>
+        <item name="android:thumbOffset">8dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:mirrorForRtl">true</item>
+    </style> -->
+
+</resources>

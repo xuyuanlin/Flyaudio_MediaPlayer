@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="62dp"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <!-- blocksDescendants：viewgroup会覆盖子类控件而直接获得焦点 -->
+    <!-- 用于解决ListView点击事件失效的问题 -->
+
+    <LinearLayout
+        android:id="@+id/itemView"
+        android:layout_width="fill_parent"
+        android:layout_height="62dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="62dp" >
+
+            <ImageView
+                android:id="@+id/album_item"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/music_list_album_u" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/album_item"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/song_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/artist_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300px"
+                android:layout_height="62dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/favorites_item"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:background="@color/transparent" />
+
+                <ImageButton
+                    android:id="@+id/detail_item"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/main_btn_detail" />
+
+                <ImageButton
+                    android:id="@+id/clear_item"
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/main_btn_clear" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

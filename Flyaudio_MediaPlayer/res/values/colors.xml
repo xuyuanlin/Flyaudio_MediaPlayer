@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="baby_blue">#FF2FA6DE</color>
+    <color name="transparent">#00000000</color>
+    <color name="sliding_bg">#FF343434</color>
+    <color name="pressed_bg">#8033B5E5</color>
+    <color name="view_bg">#D8000000</color>
+    <color name="scan_bottom_bg">#FF2FA6DE</color>
+    <color name="main_item_bg">#3f000000</color>
+    <color name="main_list_divider_bg">#50FFFFFF</color>
+    <color name="dialog_title">#FF000000</color>
+    <color name="dialog_divider">#FF4DB6FF</color>
+    <color name="dialog_info">#FF284F7A</color>
+    <color name="dialog_info1">#FF4DCFF4</color>
+    <color name="dialog_info2">#FF33CB41</color>
+    <color name="dialog_info3">#FFED851F</color>
+    <color name="dialog_info4">#FFEFBF2D</color>
+    <color name="dialog_info5">#FF1F93ED</color>
+    <color name="dialog_info6">#FF8D8D8D</color>
+    <color name="dialog_text">#FF404040</color>
+    <color name="dialog_btn">#FF8D8D8D</color>
+    <color name="itemRed">#FF00FF</color>
+    
+    <color name="lightwhite">#ddd</color>
+
+</resources>

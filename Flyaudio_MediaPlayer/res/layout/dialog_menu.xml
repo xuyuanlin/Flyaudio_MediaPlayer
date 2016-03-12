@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:minWidth="280.0dip"
+    android:orientation="vertical" >
+    <RelativeLayout 
+         android:layout_width="match_parent"
+        android:layout_height="45.0dip">
+
+    <TextView
+        android:id="@+id/dialog_menu_tv_title"
+        android:layout_width="250dp"
+        android:layout_height="45.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:singleLine="true"
+        android:textColor="@color/dialog_title"
+        android:textSize="15.0sp" />
+
+    <ImageButton
+        android:id="@+id/dialog_menu_btn_share"
+        android:layout_width="45dp"
+        android:layout_height="45.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/img_button_share" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="@color/dialog_divider" />
+
+    <TextView
+        android:id="@+id/dialog_menu_tv_remove"
+        android:layout_width="match_parent"
+        android:layout_height="45.0dip"
+        android:background="@drawable/btn_bg_style"
+        android:drawableLeft="@drawable/dialog_menu_list_remove"
+        android:drawablePadding="5.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:singleLine="true"
+        android:text="@string/xml_dialog_menu_remove"
+        android:textColor="@color/dialog_info"
+        android:textSize="16.0sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:background="@drawable/dialog_menu_list_line" />
+
+    <TextView
+        android:id="@+id/dialog_menu_tv_delete"
+        android:layout_width="match_parent"
+        android:layout_height="45.0dip"
+        android:background="@drawable/btn_bg_style"
+        android:drawableLeft="@drawable/dialog_menu_list_delete"
+        android:drawablePadding="5.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:singleLine="true"
+        android:text="@string/xml_dialog_menu_delete"
+        android:textColor="@color/dialog_info"
+        android:textSize="16.0sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:background="@drawable/dialog_menu_list_line" />
+
+    <TextView
+        android:id="@+id/dialog_menu_tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="45.0dip"
+        android:background="@drawable/btn_bg_style"
+        android:drawableLeft="@drawable/dialog_menu_list_info"
+        android:drawablePadding="5.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:singleLine="true"
+        android:text="@string/xml_dialog_menu_info"
+        android:textColor="@color/dialog_info"
+        android:textSize="16.0sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:background="@drawable/dialog_menu_list_line" />
+
+
+    <TextView
+        android:id="@+id/dialog_menu_tv_ringtone"
+        android:layout_width="match_parent"
+        android:layout_height="45.0dip"
+        android:background="@drawable/btn_bg_style"
+        android:drawableLeft="@drawable/dialog_menu_list_ringtone"
+        android:drawablePadding="5.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:singleLine="true"
+        android:text="@string/xml_dialog_menu_ringtone"
+        android:textColor="@color/dialog_info"
+        android:textSize="16.0sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:background="@drawable/dialog_menu_list_line" />
+
+    <Button
+        android:id="@+id/dialog_menu_btn_return"
+        android:layout_width="130.0dip"
+        android:layout_height="35.0dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/dialog_btn_style"
+        android:singleLine="true"
+        android:text="@string/xml_dialog_btn_negative"
+        android:textColor="@color/dialog_btn"
+        android:textSize="15.0dip" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@color/transparent" />
+
+</LinearLayout>

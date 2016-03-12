@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/notification_item_album"
+        android:layout_width="64.0dip"
+        android:layout_height="70.0dip"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/main_album_item" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="240.0dip"
+        android:layout_height="70.0dip"
+        android:layout_marginLeft="3.0dip"
+        android:layout_marginRight="3.0dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/notification_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="35.0dip"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="18.0dip" />
+
+        <TextView
+            android:id="@+id/notification_item_artist"
+            android:layout_width="match_parent"
+            android:layout_height="35.0dip"
+            android:gravity="top"
+            android:singleLine="true"
+            android:textSize="13.0dip" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70.0dip"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/not_next"
+            android:layout_width="54.0dip"
+            android:layout_height="54.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="137dp"
+            android:background="@drawable/main_btn_next" />
+
+        <ImageView
+            android:id="@+id/not_exit"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/not_next"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/img_button_notification_exit" />
+
+        <ImageView
+            android:id="@+id/not_previous"
+            android:layout_width="54dip"
+            android:layout_height="54dip"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/not_play"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/main_btn_previous" />
+
+        <ImageView
+            android:id="@+id/not_play"
+            android:layout_width="54.0dip"
+            android:layout_height="54.0dip"
+            android:layout_alignTop="@+id/not_previous"
+            android:layout_marginRight="35dp"
+            android:layout_toLeftOf="@+id/not_next" />
+
+    </RelativeLayout>
+
+</LinearLayout>
